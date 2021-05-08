@@ -6,4 +6,7 @@ setup(
     packages=["tf_lessons"],
     author="Ciencia de Datos • GECI",
     python_requires=">=3.9",
+    install_requires=[
+        "numpy",
+    ],
 )
