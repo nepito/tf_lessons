@@ -9,3 +9,10 @@ def test_lesson_dataset():
     expected_ys_sample = np.array([-3.0, -1.0, 1.0, 3.0, 5.0, 7.0], dtype=float)
     obtained_ys_sample = tfl.ys
     np.testing.assert_equal(expected_ys_sample, obtained_ys_sample)
+
+
+def test_predict():
+    expected_prediction = np.array([19.0])
+    neuron = tfl.Neuron()
+    obtained_prediction = neuron.predict([10.0])
+    np.testing.assert_equal(expected_prediction == obtained_prediction)
