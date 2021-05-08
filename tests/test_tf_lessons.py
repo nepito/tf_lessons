@@ -16,3 +16,6 @@ def test_predict():
     neuron = tfl.Neuron()
     obtained_prediction = neuron.predict([10.0])
     np.testing.assert_equal(expected_prediction, obtained_prediction)
+    expected_prediction = np.array([39.0])
+    obtained_prediction = neuron.predict([20.0])
+    np.testing.assert_equal(expected_prediction, obtained_prediction)
