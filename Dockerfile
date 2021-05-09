@@ -1,7 +1,8 @@
 FROM python:3
 WORKDIR /workdir
 COPY . .
-RUN pip install \
+RUN pip install --upgrade pip && pip install \
+    autopep8 \
     black \
     codecov \
     data-science-types \
@@ -9,7 +10,7 @@ RUN pip install \
     flit \
     mutmut \
     mypy \
-    numpy \
     pylint \
     pytest \
-    pytest-cov
+    pytest-cov \
+    tox

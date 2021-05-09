@@ -5,7 +5,7 @@ setup(
     version="0.1.1",
     packages=["tf_lessons"],
     author="Ciencia de Datos • GECI",
-    python_requires=">=3.9",
+    python_requires=">=3",
     install_requires=[
         "numpy",
         "tensorflow",
