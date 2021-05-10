@@ -19,3 +19,10 @@ def test_predict():
     expected_prediction = np.array([29.0])
     obtained_prediction = neuron.predict([15.0])
     np.testing.assert_approx_equal(expected_prediction, obtained_prediction, significant=3)
+
+
+def test_params_for_fit():
+    expected_params = {"verbose": 0, "epochs": 500, "steps": 1}
+    neuron = tfl.Neuron()
+    obtained_params = neuron.paramas_for_fit
+    assert expected_params == obtained_params
