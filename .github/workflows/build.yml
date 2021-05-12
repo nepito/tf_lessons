@@ -30,3 +30,6 @@ jobs:
     - name: Run Tox
       run: |
         python -m tox
+    - name: Summons mutants
+      run: |
+        make mutants
