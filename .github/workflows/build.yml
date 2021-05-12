@@ -29,4 +29,4 @@ jobs:
         python -m pip install black coverage flake8 flit mccabe mypy pylint pytest tox tox-gh-actions
     - name: Run Tox
       run: |
-        tox -e py39
+        python -m tox
