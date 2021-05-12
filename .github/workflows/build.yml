@@ -1,4 +1,4 @@
-name: Tests
+name: Build
 on:
   pull_request:
     branches:
@@ -27,3 +27,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         python -m pip install black coverage flake8 flit mccabe mypy pylint pytest tox tox-gh-actions
+    - name: Run Tox
+      run: |
+        tox
